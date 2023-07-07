@@ -8,15 +8,20 @@ int main()
     {
         for(int j=0;j<row;j++)
         {
-            if(i==row-1&&j<row)
+            if(i==0&&j<row||(i==j))
                 printf("*");
-            else if(i==j||j==0)
-            {
-                printf("*");
-            }
-            else
+            else   
+            printf(" ");
+        }
+
+        for(int j=1;j<row;j++)
+        {
+        if(((row-1-i)==j)||(i==0&&j<row))
+            printf("*");
+            else   
             printf(" ");
         }
         printf("\n");
     }
+        
 }
